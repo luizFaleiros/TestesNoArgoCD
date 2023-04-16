@@ -1,9 +1,9 @@
 apiVersion: v1 # versão da API
 kind: ConfigMap # tipo de recurso, no caso, um ConfigMap
 metadata: # metadados do recurso
-    name: nginx-config # nome do recurso
+  name: nginx-config # nome do recurso
 data: # dados do recurso
-    nginx.conf: | # inicio da definição do arquivo de configuração do Nginx
+  nginx.conf: | # inicio da definição do arquivo de configuração do Nginx
     server {
       listen 80;
       location / {
@@ -13,4 +13,5 @@ data: # dados do recurso
       location /metrics {
         stub_status on;
         access_log off;
-      }}
+      }
+    }
