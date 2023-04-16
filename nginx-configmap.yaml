@@ -13,5 +13,4 @@ data: # dados do recurso
       location /metrics {
         stub_status on;
         access_log off;
-      }
-    }
+      }}
